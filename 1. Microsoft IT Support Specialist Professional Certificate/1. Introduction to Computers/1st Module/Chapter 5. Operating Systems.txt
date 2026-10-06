@@ -1,0 +1,230 @@
+Chapter 4. Operating Systems
+
+​Think of Sam Scoops and ​all the employees working together to ensure the business runs smoothly. ​This might include attendants, dishwashers, and cashiers. ​While their duties are clearly defined, it doesn't mean that they work in isolation. ​Their tasks must be monitored to ensure that the whole team can work together ​without blocking each other. ​Computers work on a similar principle. ​Different components are competing for limited resources, and ​their access to such resources must be regulated to avoid conflict. ​This role is fulfilled by an operating system. 
+​In this video, you'll learn what exactly an operating system is. ​You'll be able to explain the role it plays and ​how it interacts with the various software and ​hardware components to create a smooth experience for the user. ​The operating system is the software component that interacts with the hardware ​and software programs to provide users with a standard computer experience. ​You can think of it as a go between that starts up the computer hardware and file ​systems and allows for the interaction between multiple users, CPUs and Tasks. ​You can simplify the responsibilities of the operating system into three ​broad categories, which are controlling hardware access, ​providing a user interface, and managing files and applications. ​Let's explore each of these one at a time, ​starting with how an operating system controls hardware access. ​When interacting with the hardware of a computer, ​the operating system will communicate instructions through a device driver. 
+​These are essentially small pieces of code written by a device manufacturer, ​which allow messages and instructions to be passed between the hardware and ​other software to control the device. ​Most devices are installed to a computer through a plug and play process, ​which means that a device connects to a computer and ​sends a signal to the operating system. ​The software then installs a device driver that enables interaction and ​stores this application's settings in a central location. ​This is saved in the registry on a Windows computer or ​the Preferences folder on a Mac. ​Plug and play comes from a time when all devices were physically connected, but ​these days devices can be connected digitally as well. ​Consider printers or any device found on the internet of things that can connect ​via Bluetooth, which are still examples of plug and play. ​You'll explore the Internet of things in greater detail later on. 
+​Another role of an operating system is to provide a user interface which facilitates ​the way a user communicates with the hardware and software of a computer. ​This interface is available in two forms, one is the command line or ​terminal window. ​You will be familiar with this from many movies dealing with hackers breaking into ​computers. ​Command line or terminals allow for access to every part of a computer system, but ​require the user to provide very detailed instructions, often as programmer code. ​The other type is the graphical user interface. ​This is the most common way for users to interact with computer programs, ​including controlling the options for the operating system. ​It involves using a mouse to click on menus and icons to initiate programs. 
+​Most operating systems will provide the user with both CLI and GUI options. ​Finally, let's find out how an operating system manages files and applications. ​An application is a software program that performs a task. ​Microsoft Excel, Microsoft Word, or your Web browser are examples of commercial ​applications that you likely use every day. ​However, users can also develop their own applications, ​which the operating system can run. ​An application will typically have an application programming interface, ​more commonly known as an API, which determines a set of rules for ​interacting with the program. ​In other words, ​an API ensures that a program is compatible with a given operating system. 
+​When an application is called for use through a user interface, ​the operating system loads the program from its place in memory into the RAM. ​Recall that RAM is immediate storage that holds files currently in use. ​The operating system then determines how much space and ​CPU power an application will be given. ​Some applications, such as a word processor, require relatively few ​resources, while others, such as a game with high resolution graphics, ​are CPU intensive, and will dominate a computer's resources. ​In this video, you've received an overview of what an operating system is and ​the role it plays on a computer. ​You should now know that the responsibilities of an operating system ​fall into three general categories, which are controlling hardware access, ​providing a user interface, and managing files and applications. 
+
+Types of operating systems
+0:03
+/
+6:05
+Introduction
+Previously, you became familiar with the various hardware and software components that comprise a computer, and the functions they serve. To manage these elements, you would need some software that will oversee the interactions between the software, hardware, and human operator, as well as scheduling the executions of the various tasks required. This is where operating systems enter the picture.
+
+An Operating System (OS) is a term for software that oversees the interaction between hardware and software operations and provides a means through which a human can interact with the system. Systems will have different needs and functionalities, so there are several variations of operating systems that can run the application. By the end of this reading, you’ll be able to describe several different operating systems and identify their advantages and drawbacks.
+
+Types of Operating Systems
+There are numerous operating system types, in this reading, you will learn about the five variations, and what distinguishes them from one another. The categories are:
+
+Batch Operating Systems 
+
+Time-sharing Operating Systems 
+
+Distributed Operating Systems
+
+Network Operating Systems 
+
+Real-Time Operating Systems 
+
+While the fundamental principles of what each OS does is the same, the way that each achieves this end is different. Let’s examine what distinguishes each approach. 
+
+Batch Operating Systems (BOS)
+A BOS allows multiple users to work in tandem by compartmentalizing each user’s actions and only allowing one user control at any given time. Users cannot communicate with one another and when the task is complete, control is passed to the next user. The advantage of this approach is that it allows many users to work on large projects at the same time.
+
+A diagram depicting a batch operating system.
+The rationale behind this approach is that large projects are broken into smaller, more manageable chunks and hence do not require being loaded into memory all at once. Another advantage is that similar types of jobs that are queued to run will be run together. This is quicker as it reduces the overhead in loading and queuing the resources that are mutual to each task. The challenge is in coordinating many different users operating at once. This results in some tasks running slower because excessive time is spent waiting for the OS to free up the resources. 
+
+Time-Sharing Operating Systems (TOS)
+This approach is also known as a Multitasking System as it enables the execution of many different tasks. A TOS operates in a timed manner: a unit of time called a quantum is allocated to each task. These tasks are queued for the CPU, which will work on each one for a quantum before rotating to the next task. 
+
+Diagram illustrating how a time-sharing operating system works.
+This approach is beneficial when the task load is running several small tasks. The major advantage of this approach is that it minimizes CPU wait time, and every user is given a fair time location. The disadvantage to this approach is that the rapid switching between tasks can result in some communication issues, with data being mixed up. 
+
+Distributed Operating Systems (DOS) 
+This approach to processing is a natural progression as internet communication improves. A DOS connects several dispersed CPUs to execute tasks. There is no central source and communication is achieved through using clear protocols on a communication network. 
+
+A diagram depicting a distributed operating system.
+The advantage of using a distributed approach is that it can scale up or down depending on the processing need. As the network is dispersed there is greater robustness to failure. A drawback is that it is still a relatively new approach and so the communication protocols are not well defined. 
+
+Network Operating Systems (NOS) 
+This type of operating system runs on a network and allows for the sharing of users, groups, securities, and applications. Typically, the network would contain one server-based OS that interacts with the OS of each individual device on the system. It is possible to have any number of devices on the network, and they can be of different types. For example, you could add a printer, digital thermometer, and several computers to one system and have them all interact. This type of approach would be considered tightly-coupled, as the devices utilize a shared network and demonstrate high interactivity with each other.
+
+A diagram depicting a network operating system.
+The advantage of this approach is that users can remotely log on, enabling easy upgrading as new devices and technology can be added to the existing network. It can however be costly to maintain and requires a centralized location for performing operations. 
+
+Real-time Operating Systems (RTOS) 
+An RTOS is a type of OS for applications that need real-time computations. While many approaches may share resources and operate under a time share, RTOS differs in that it prioritizes tasks by importance. This approach is event-driven with an emphasis on engaging and completing tasks as soon as they arise. This distinguishes RTOS from the other approaches mentioned, in which the priority of a task is determined by the time allocated. These operating systems are generally task-specific approaches and are commonly found in systems such as autonomous cars, air traffic controls, and more.
+
+Diagram illustrating how a real-time operating system works.
+The advantage of this approach is that it can generate results with exceptional speed by using a priority queue that emphasizes completing a task reactively. The disadvantage is that it is very specialized and does not generalize well to performing a diverse range of tasks. 
+
+Conclusion
+In this reading, you’ve analyzed various categories of operating systems, specifically batch operating, time-sharing, distributed, network, and real-time systems. You’re now aware that each one has its advantages and disadvantages, and there is no single best approach. You should know that different operating systems exist for different tasks, and knowing how to distinguish between them will help with decision-making in future cases. 
+
+
+
+​By now, you should be familiar with the role of ​an operating system and ​the several major types that are available. ​But what is the specific software ​that people are actually using? ​Despite the many options available, ​the modern operating system is ​dominated by just a few major competitors, ​each of which offer unique advantages over the others. ​In this video, we will explore ​the five most popular operating systems in use today, ​which are Windows, Mac, ​Android, iOS, and Linux. ​You'll become aware of the key characteristics of ​each one and find out how they compare with each other. ​Recall that the core function of ​an operating system is to allow you to access ​various software and hardware components ​and to facilitate communication between them all. ​There are different types of ​operating systems that you may encounter, ​but all of them should fulfill this role. 
+​For desktop and laptop computers, ​the three most common operating systems ​are Microsoft Windows, ​Apple's macOS, and Linux. ​These are primarily found on PCs. ​Whereas other devices such as phones, ​tablets, and music players, ​run on different operating software ​because they have different specifications. ​The most notable examples of operating systems for ​mobile devices are Google Android, and Apple iOS. ​So why are ​their distinct operating systems across devices? ​Generally, a PC is expected to perform more complex, ​varied, and process intensive tasks. ​As such, it requires ​a more sophisticated operating system. 
+​In contrast, mobile devices ​typically do not have ​the same memory or processing capacity. ​Mobile operating systems are tailored to instead ​maximize the device's resources ​and utilize them more efficiently. ​In spite of this, it's worth ​noting that the processing power found in ​a current day phone is greater than that of ​the computers that were used to ​first send a man to the moon. ​Now that you know what the most ​popular operating systems are, ​let's explore them one at a time more deeply. ​Starting with one of ​the oldest programs, which is Windows. ​Windows is proprietary software that is often ​preloaded into PCs as the default operating system. ​As such, the popularity ​of Windows ensures that developers are ​highly likely to make ​their applications compatible with the system. 
+​While windows can be used with a command line interface, ​it heavily favors a graphical user interface approach. ​This means there is greater emphasis on pop-up menus and ​clickable icons as a means of navigating applications. ​The second most popular OS for ​computers is Apple's macOS. ​It is preloaded on ​all Apple computers and is also proprietary software. ​Users are discouraged from altering the code ​and instead should use the software as sold. ​As with Windows, it is typically ​used with a graphical user interface. ​While Apple and Windows are ​the systems of choice for PCs, ​mobile devices need something ​else to handle their unique needs. 
+​Let's move on to those next. ​First is Android, which receives ​regular updates and additional features. ​While it can be used for devices such ​as cameras and gaming consoles, ​this software is most frequently ​found on smartphones and tablets. ​Android is open source, ​making it highly customizable. ​Overall, Android is ​the most popular operating system ​for mobile devices worldwide. ​However, it does have one major competitor, ​another mobile device OS, ​Apple's iOS is a popular alternative to Android. ​A key difference is that rather than ​being available to numerous device makers, ​it is proprietary software that is ​exclusive to Apple products. 
+​Compared to Android, users have ​limited ability to customize the software. ​IOS is run on iPhones, iPads, and iPods, ​and is the second most widely used OS for mobile devices. ​Lastly, let's examine an operating system that ​doesn't currently have the mainstream appeal ​of the previous four, ​but is noted for playing a large role in OS innovation. ​An alternative to proprietary software, ​Linux is an open-source OS ​for both computing and mobile devices. ​This means that the code is freely ​available for people to alter as they feel fit. ​This has led to a large community of ​enthusiasts who develop an optimized many variations. ​Linux offers a Command Line Interface, ​CLI, over a GUI based approach. 
+​While Linux is not as ​widely distributed as Windows or Mac, ​it is popular for Cloud computing and ​will likely experience growth as ​more people embrace this format. ​MacOS is descended from Unix, ​and while similar to Linux, ​it is different enough that ​an Android app won't work on iOS. ​Windows nice ships with a built-in Linux kernel, ​allowing Linux apps to run on Windows too. ​Now that you're familiar with ​the five major operating systems, ​let's observe each of them in action. ​Specifically, you'll witness the startup process of ​each one along with ​the interface that is first presented, ​once that process completes. ​In a typical Windows setup, ​you'll begin by logging in with a password. ​After a few moments, you will arrive at the desktop, ​which is the main workspace and ​a core part of the Windows GUI. 
+​The bar at the bottom is the task bar. ​This can hold several apps at once, ​making it easy to switch between them. ​Starting up macOS is similar to ​Windows and you'll need to login first. ​A difference you might notice this time ​around is the bar with the icons. ​This is the dock, and you can customize it to hold ​your favorite apps so that you ​can access them more quickly. ​On the mobile side, you have Android. ​Most Android devices can be unlocked with ​a pin or a biometric feature like a fingerprint. 
+​Because the software is open source, ​the appearance capabilities and ​the overall experience in ​one device can be different from those of another. ​This depends on how the manufacturer has altered it. ​The other major mobile operating system is iOS, ​which you'll find on Apple devices ​like the iPhone and iPad. ​The software can't be customized as much as Android, ​but it's well-known for giving ​a consistent experience across different devices. ​Finally, there is Linux. ​Linux is open source and has ​a very active developer community, ​which means that it takes on many forms. ​One of the most popular versions for ​Cloud computing is a Ubuntu, ​this is because Cloud computing ​relies on resources that are stored ​online and Ubuntu can access ​these resources with both speed and security. 
+​In this video, you've become familiar with ​the five most popular operating systems for ​both computers and mobile devices. ​You should now be aware that Windows, Mac, ​and Linux are the most common programs ​for desktops and laptops. ​While Android and iOS are ​the dominant software for smartphones and tablets 
+
+Proprietary and open-source software
+0:01
+/
+5:26
+Introduction
+One decision you will face at some stage in your career is determining what type of software you should use to achieve a business need. A business need is a set of company goals, and the actions to take to achieve those goals, and generate money for business success. 
+
+Sam sells ice cream, so the business needs are related to purchasing and selling ice cream with additional associated tasks that generate revenue. To achieve efficiency and automation of processes while maintaining a quick turnaround time, Sam must decide which software or hardware components are best suited. 
+
+An important consideration is the type of software. In this reading, you’ll discover the distinction between open-source and proprietary software, and whether one is preferred over the other. 
+
+Software Licensing 
+There are two main types of software licensing, namely, Open-source software (OSS) and Proprietary software (PS). To summarize the key difference, an OSS license includes permissions for content to be freely distributed and modified for appropriate use. In contrast, a PS license must be purchased, and restrictions are placed on how the software is used. Some restrictions might also dictate that the source code cannot be altered or determine how it is sold or further distributed. Next, let’s explore each of these license types in greater detail.
+
+Characteristics of Open source vs. Proprietary Software
+Modifications
+Open Source Software or (OSS) empowers users by allowing them to modify source content without consulting the software's original owners. This not only leads to rapid bug fixes and issue resolution but also fosters a community of dedicated hobbyists who voluntarily provide fixes and support for one another. The downside is that code changes are not performed by the code's owner, but this also means that users have the freedom to shape the software to their needs.
+
+Proprietary Software or (PS), in comparison, is more restrictive. It ensures that any alterations to the code improve it overall for the users. There is a sense of security and credibility because verified professionals make changes to the code. Proprietary software typically comes with drivers so developers can efficiently interact with the program. Additionally, PS contains extensive documentation on the changes made and the appropriate use of the software.
+
+PS distributors aim to create a product that people wish to use. A private developer may have different motivations, such as tailoring software to private projects. If a bug is detected in a paid product, you can raise the issue, and the product owner will be responsible for addressing it. Accountability such as this isn’t necessarily applicable to OSS products that have been freely given to the community. 
+
+Costing
+A benefit of OSS is that it typically does not require licensing fees. However, errors and bugs may go unaddressed if a software application is not popular. This contrasts with PS, where the issue might be extended wait times until a mistake is addressed.
+
+When using PS, you should be aware of its price. PS will produce a polished and professional product, but the attention to detail comes with a price tag. If your company makes a small application, you can factor the cost into production. However, if your product starts out small with the aim of scaling up, this cost might increase with frequent use. This price does ensure that you have recourse should an issue emerge with the software package. 
+
+Open-source Software advantages
+There are several advantages of using open-source software that has a strong community following. These include:
+
+Positive opportunities for collaboration, 
+
+Robust technical support to help users adapt to the software, 
+
+The ability to address any integration issues faced. 
+
+It also offers flexibility, as one can alter the software or use a variation made to the software that suits your project. 
+
+Lastly, it removes the dangers of vendor lock-in. This is when a company’s IT infrastructure becomes overly reliant on one vendor, and the cost of altering the infrastructure is prohibitive, forcing a company to depend on a given vendor. 
+
+The table below provides examples of both open-source and proprietary software.
+
+Open-source software
+
+Proprietary software
+
+Linux
+
+Avast
+
+React
+
+MacOS
+
+Free office
+
+Windows
+
+All these examples are popular programs from both approaches. It is crucial to consider your specific business needs when choosing software, as this ultimately determines the best software solution for you, providing a sense of guidance and informed decision-making.
+
+Conclusion
+In this reading, you discovered the difference between OSS and PS and explored the characteristics of each type of software. Succinctly, OSS is free and modifiable code with a community of developers who contribute to it. This can be an excellent resource for seeking help and changing the source code to suit your specific needs. It does not have the same level of restrictions associated with PS. 
+
+In contrast, PS comes with a purchase price, but if there are issues with the product then the software owners commit to fixing it. It comes with the guarantee that it has been rigorously tested, with clear documentation of how to use it.
+
+
+
+Types of software: System, application and utility
+0:01
+/
+5:06
+Introduction
+When you hear the term software, you might immediately associate it with Windows, Linux, or Android. However, software is an encompassing term that covers all the code that runs on hardware and directs how the hardware operates. Additionally, various software categories can share common roles. In this reading, you will dive into the world of software that is found in various computing environments and explore three specific categories: 
+
+System software, which runs the programs on your computer. 
+
+Application software, which refers to the software programs you interact with to complete your daily tasks. 
+
+Utility software, which is made to assist a computer in carrying out regular tasks. 
+
+Software plays a crucial role in computer systems' functionality, and understanding the various types is essential for a comprehensive understanding of how these systems operate. 
+
+System Software
+To begin with, let's discuss system software. System software refers to the programs that manage and control a computer system's basic operations. It includes the operating system and core software, enabling communication between hardware and software components. The operating system provides a platform for other software to run on and manages resources such as memory, CPU, and storage. Examples of popular operating systems include Windows, macOS, and Linux.
+
+Device Drivers
+Another critical component of system software is the device drivers. Device drivers are software programs that facilitate communication between the operating system and hardware devices such as printers, scanners, and graphics cards. They act as intermediaries, translating commands from the operating system into a language that the hardware can understand. Device drivers are crucial for ensuring that hardware devices function correctly and are compatible with the operating system.
+
+Application Software
+Next is application software, which is designed to perform specific tasks or provide specific functionality to users. Application software can be categorized into different domains: productivity, entertainment, communication, and more. Examples of application software include word processors, spreadsheets, web browsers, media players, and video editing software. Typically, application software is developed to meet users' needs in various industries and sectors. For example, in the business domain, there are applications for accounting, customer relationship management (CRM), and project management. There are applications for electronic medical records (EMR) and medical imaging in the healthcare sector. 
+
+Each application software serves a specific purpose and is tailored to meet the requirements of its intended users.
+
+Utility Software
+Lastly, let's explore utility software. Utility software refers to programs that assist in managing and maintaining computer systems. These tools optimize system performance, enhance security, and provide additional functionality. Examples of utility software include antivirus programs, disk defragmenters, file compression tools, and backup software. Antivirus programs protect computer systems from malware and other security threats. They scan files and programs for known malicious code patterns and take appropriate actions to prevent infection. Disk defragmenters, on the other hand, optimize the arrangement of files on a hard drive, improving access times and overall system performance. File compression tools reduce the size of files, making them easier to store and transfer. Backup software allows users to create copies of important files and restore them in case of data loss. Understanding the different types of software is crucial for comprehending the complex interactions between hardware and software components in a computer system. System software provides the foundation for operating the entire system, while application software caters to your specific needs. Utility software, on the other hand, assists in system management and optimization.
+
+Conclusion
+In this reading, you learned the difference between the various software types. Specifically, you discovered that system software, like operating systems, runs the hardware; they are interpreted by device drivers with relay messages between hardware and software. On the other hand, application software is rooted in the activities you use the computer for, such as making documents, editing images, or making spreadsheets. Finally, we discussed utility software, the functional software that minds your computer and data. It performs routine tasks like backing up data and defragging the hard drive. 
+
+By categorizing software into system, application, and utility software, you can better understand the diverse software landscape and how different types of software serve various purposes. This knowledge is essential for anyone seeking to explore computer systems and understand their functionality comprehensively. 
+
+
+
+​Well done on completing ​introduction to computers and operating systems. ​Before you continue, let's recap on some key takeaways. ​After familiarizing yourself with ​the course learning objectives, ​you began with an introduction to the threat landscape. ​Here you learned about how cyber attacks occur. ​You can now describe ​current cyber attack statistics and trends and explain ​how unauthorized access gained has ​a huge impact on multiple devices or domains. ​You discovered that the threat landscape ​is broken up into three distinct areas. ​The vulnerabilities of the application, ​the types of attacks used, ​and the perpetuators of the crime. 
+​Next, you were introduced to computing devices and ​discuss the basic components ​that make a computing device. ​Whether it is a laptop, ​desktop or mobile device, ​it requires some basic components. ​Let's recap on four of these components. ​The first component is ​the central processing unit, or CPU. ​It is often referred to as the brain of ​the computer where the computation is performed. ​The second component is RAM. ​RAM is a plug and play ​addition to a computer that stores information. 
+​Can you imagine if you had to ​re-learn every task when you woke up every morning? ​RAM ensures that a computer can ​recall and recollection is ​a core requirement for intelligence. ​You then learned about input and output devices. ​This is crucial to a computer ​because it takes in the input, ​decodes and processes the data, ​and displays an output. ​The final component is ​the motherboard which enables the operation. ​It does not actively take part in computation, ​but it provides a hub through which ​all these components interact ​and generate the desired output. ​Then you learned about computer graphics and ​discovered how visuals come to life in computer systems. 
+​You now understand how graphic cards process ​and render visual data and how it is displayed. ​Additionally, you explored how ​complex processes enable ​the visual displays on computer screens. ​You broadened your understanding of computers by ​unpacking the differences between hardware and software. ​Remember that hardware makes the physical device operate, ​and software gives instructions so ​that the hardware knows what to do and how to do it. ​It's an interdependent relationship ​that allows you to interact with your computer. ​Finally, you focused on operating systems, ​which provide the directions ​that are sent to the hardware. ​They configure applications so that they ​communicate efficiently with hardware devices. 
+​You examined several major operating systems, ​including those specific to ​computers and to mobile devices. ​Then you explore the two main categories ​that the software generally falls into, ​which are proprietary or open source. ​You should now be better informed about how to choose ​a suitable operating system for a specific business need. ​Recall the three key responsibilities ​of an operating system. ​It controls the access of hardware that is ​connected to the device physically or digitally. ​It provides the interface that enables you, ​the user, to communicate with ​the computer's hardware and software. ​Specifically, the interface is ​a command line interface or a graphical user interface. 
+​It manages files and applications by allocating ​suitable system resources as determined by an API. ​Next, you explore the various types of ​software found in computing environments. ​Remember, each type serves ​a distinct purpose in a computer system. ​System software manages computer resources. ​Application software carries out specific tasks for ​users and utility software ​maintains efficient software operations. ​Having completed the introduction to computers course, ​you have an excellent foundation ​to navigate the world of computers. ​You are well versed in computer basics like hardware, ​software, and operating systems, ​and gained insight into the various threats ​facing the IT industry today. Nice work. 
+​Well done on completing ​introduction to computers and operating systems. ​Before you continue, let's recap on some key takeaways. ​After familiarizing yourself with ​the course learning objectives, ​you began with an introduction to the threat landscape. ​Here you learned about how cyber attacks occur. ​You can now describe ​current cyber attack statistics and trends and explain ​how unauthorized access gained has ​a huge impact on multiple devices or domains. ​You discovered that the threat landscape ​is broken up into three distinct areas. ​The vulnerabilities of the application, ​the types of attacks used, ​and the perpetuators of the crime. ​Next, you were introduced to computing devices and ​discuss the basic components ​that make a computing device. ​Whether it is a laptop, ​desktop or mobile device, ​it requires some basic components. ​Let's recap on four of these components. ​The first component is ​the central processing unit, or CPU. ​It is often referred to as the brain of ​the computer where the computation is performed. ​The second component is RAM. ​RAM is a plug and play ​addition to a computer that stores information. ​Can you imagine if you had to ​re-learn every task when you woke up every morning? ​RAM ensures that a computer can ​recall and recollection is ​a core requirement for intelligence. ​You then learned about input and output devices. ​This is crucial to a computer ​because it takes in the input, ​decodes and processes the data, ​and displays an output. ​The final component is ​the motherboard which enables the operation. ​It does not actively take part in computation, ​but it provides a hub through which ​all these components interact ​and generate the desired output. ​Then you learned about computer graphics and ​discovered how visuals come to life in computer systems. ​You now understand how graphic cards process ​and render visual data and how it is displayed. ​Additionally, you explored how ​complex processes enable ​the visual displays on computer screens. ​You broadened your understanding of computers by ​unpacking the differences between hardware and software. ​Remember that hardware makes the physical device operate, ​and software gives instructions so ​that the hardware knows what to do and how to do it. ​It's an interdependent relationship ​that allows you to interact with your computer. ​Finally, you focused on operating systems, ​which provide the directions ​that are sent to the hardware. ​They configure applications so that they ​communicate efficiently with hardware devices. ​You examined several major operating systems, ​including those specific to ​computers and to mobile devices. ​Then you explore the two main categories ​that the software generally falls into, ​which are proprietary or open source. ​You should now be better informed about how to choose ​a suitable operating system for a specific business need. ​Recall the three key responsibilities ​of an operating system. ​It controls the access of hardware that is ​connected to the device physically or digitally. ​It provides the interface that enables you, ​the user, to communicate with ​the computer's hardware and software. ​Specifically, the interface is ​a command line interface or a graphical user interface. ​It manages files and applications by allocating ​suitable system resources as determined by an API. ​Next, you explore the various types of ​software found in computing environments. ​Remember, each type serves ​a distinct purpose in a computer system. ​System software manages computer resources. ​Application software carries out specific tasks for ​users and utility software ​maintains efficient software operations. ​Having completed the introduction to computers course, ​you have an excellent foundation ​to navigate the world of computers. ​You are well versed in computer basics like hardware, ​software, and operating systems, ​and gained insight into the various threats ​facing the IT industry today. Nice work.  Introduction to Computers Complete 3 items today to stay at a good pace! Introduction to the course Introduction to the program Video. Duration: 4 minutes4 min Course introduction: Introduction to Computers Video. Duration: 2 minutes2 min Course syllabus: Introduction to Computers Reading. Duration: 10 minutes10 min How to be successful in this course Reading. Duration: 10 minutes10 min Introduction to Generative AI Welcome to Generative AI for everyone Video. Duration: 6 minutes6 min Understanding the Capabilities of Generative AI for Business Functions Video. Duration: 9 minutes9 min Generative AI Terminology Reading. Duration: 10 minutes10 min Generative AI - Under the hood Video. Duration: 7 minutes7 min The potential pitfalls and shortcomings of GEN AI Video. Duration: 6 minutes6 min Mastering Generative AI Architectures and Applications Practice Assignment. Duration: 15 minutes15 min Generative AI in Business Reading. Duration: 10 minutes10 min Reflecting on AI's Impact: Your Future in Tech Support Dialogue. Duration: 15 minutes15 min Decoding the threat landscape: An IT perspective Threat landscape overview Video. Duration: 4 minutes4 min Threat stats Reading. Duration: 10 minutes10 min Linked threats Video. Duration: 4 minutes4 min Exercise: Explaining the threat landscape Reading. Duration: 30 minutes30 min Exemplar: Explaining the threat landscape Reading. Duration: 10 minutes10 min Knowledge check: Decoding the threat landscape: An IT perspective Practice Assignment. Duration: 15 minutes15 min Additional resources: Threat landscape Reading. Duration: 5 minutes5 min Introduction to computing devices What is a computer and what is inside it? Video. Duration: 4 minutes4 min Hardware versus software Reading. Duration: 10 minutes10 min How does a computer operate? Video. Duration: 6 minutes6 min Monitors and graphics cards: How visuals come to life Reading. Duration: 10 minutes10 min Activity: Computer component match-up Ungraded Plugin. Duration: 10 minutes10 min Knowledge check: Introduction to computing devices Practice Assignment. Duration: 15 minutes15 min Additional resources: Introduction to computing devices Reading. Duration: 5 minutes5 min Computer Components in Action: Connecting the Pieces Dialogue. Duration: 15 minutes15 min Operating systems What is an operating system and what does it do? Video. Duration: 4 minutes4 min Types of operating systems Reading. Duration: 10 minutes10 min Popular operating systems Video. Duration: 6 minutes6 min Proprietary and open-source software Reading. Duration: 10 minutes10 min Types of software: System, application and utility Reading. Duration: 10 minutes10 min Activity: Software type matching challenge Ungraded Plugin. Duration: 10 minutes10 min Knowledge check: Operating systems Practice Assignment. Duration: 15 minutes15 min Module summary: Introduction to computers and operating systems Video. Duration: 3 minutes3 min Module quiz: Operating systems Graded Assignment. Duration: 30 minutes30 min Additional resources: Operating systems Reading. Duration: 5 minutes5 min 0:02 / 3:59 Module summary: Introduction to computers and operating systems Dive deeper on this topic Transcript​Interactive Transcript - Enable basic transcript mode by pressing the escape key You may navigate through the transcript using tab. To save a note for a section of text press CTRL + S. To expand your selection you may use CTRL + arrow key. You may contract your selection using shift + CTRL + arrow key. For screen readers that are incompatible with using arrow keys for shortcuts, you can replace them with the H J K L keys. Some screen readers may require using CTRL in conjunction with the alt key : Added to Selection. Press [CTRL + S] to save as a note : Added to Selection. Press [CTRL + S] to save as a note
+
+
+Additional resources: Operating systems
+0:02
+/
+1:48
+Introduction
+This reading allows you to explore the topics of software and the Windows operating system further by providing additional resources exploring the differences between proprietary and open-source software and valuable insights into how Windows works. 
+
+Software
+Software in use today falls into two categories: proprietary, often the work of a single developer, and open source, often the product of a community of developers. 
+
+Try exploring the following resources, which will help you better understand some of the advantages and limitations of each type:
+
+Proprietary software
+: An examination of proprietary software and a summary of its legal implications.
+
+What is open-source software?
+ Exploration of open-source software and the reasons why a person or organization might prefer to use it.
+
+Microsoft Windows
+Have you ever wanted to better understand how Microsoft Windows works? The following resources explain what is going on under the hood of a Windows machine:
+
+Windows client devices:
+ Compare how the Windows experience changes when used across different devices, such as desktop computers and tablets.
+
+Booting Windows: 
+Expand your understanding of what happens when a Windows machine starts.
+
+Windows registry: 
+Learn more about how Windows configures and manages software and drivers.
+
+Tuning Windows Machines
+: This link will help you free up disk space, optimize startup programs, and improve a computer's overall performance. 
+
+Conclusion
+These resources provide you with a better understanding of Windows and software, you’ll discover that while operating systems serve a simple role on the surface, a lot is happening in the background to ensure that resource distribution to all components is done carefully.
+
+
+  
+
